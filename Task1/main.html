@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">EventLogo</a>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#event-details">Event Details</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#registration">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Join Our Exciting Event!</h1>
+            <p>Don't miss out on our upcoming event. Register now to secure your spot!</p>
+            <a href="#registration" class="cta-button">Register Now</a>
+        </div>
+    </header>
+
+    <section class="event-details" id="event-details">
+        <div class="container">
+            <h2>Event Details</h2>
+            <div class="details">
+                <div class="detail">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStgzQJeFzQIg9bfSnt4sXXrAG3YQs5iNECHA&s" alt="Date">
+                    <h3>Date</h3>
+                    <p>September 30, 2024</p>
+                </div>
+                <div class="detail">
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2dC0XOL6L_0nuXAxilzNOStChOpiWbC_sdA&s' alt="Time">
+                    <h3>Time</h3>
+                    <p>10:00 AM - 4:00 PM</p>
+                </div>
+                <div class="detail">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cekDHLvH2VtUXmXPdrng8nzimd-UlEgMOg&s" alt="Location">
+                    <h3>Location</h3>
+                    <p>New York City, NY</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="speakers" id="speaker">
+        <div class="container">
+            <h2>Meet Our Speakers</h2>
+            <div class="speaker-list">
+                <div class="speaker">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs_dB3X7WDbjVV5YYNYZMi44S38WjkwtK3Ew&s" alt="Speaker 1">
+                    <h3>Speaker 1</h3>
+                    <p>Expert in [Field]</p>
+                </div>
+                <div class="speaker">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs_dB3X7WDbjVV5YYNYZMi44S38WjkwtK3Ew&s" alt="Speaker 2">
+                    <h3>Speaker 2</h3>
+                    <p>Leader in [Industry]</p>
+                </div>
+                <div class="speaker">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs_dB3X7WDbjVV5YYNYZMi44S38WjkwtK3Ew&s" alt="Speaker 3">
+                    <h3>Speaker 3</h3>
+                    <p>Innovator in [Technology]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <h2>Event Schedule</h2>
+            <ul>
+                <li>
+                    <span class="time">10:00 AM</span>
+                    <span class="">Opening Remarks</span>
+                </li>
+                <li>
+                    <span class="time">11:00 AM</span>
+                    <span class="">Keynote by Speaker 1</span>
+                </li>
+                <li>
+                    <span class="time">1:00 PM</span>
+                    <span class="">Lunch Break</span>
+                </li>
+                <li>
+                    <span class="time">2:00 PM</span>
+                    <span class="">Panel Discussion</span>
+                </li>
+                <li>
+                    <span class="time">4:00 PM</span>
+                    <span class="">Closing Remarks</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="registration" id="registration">
+        <div class="container">
+            <h2>Register for the Event</h2>
+            <form id="registration-form" onsubmit="return validateForm()">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <input type="text" name="phone" id="phone" placeholder="Your Phone Number" required>
+                <button type="submit">Register Now</button>
+            </form>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Event Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
